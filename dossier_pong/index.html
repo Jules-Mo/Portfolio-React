@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="menu">
+        <a class="lien" href="../index.html">Retour à la page principale</a>
+        <h1>Jeu de Pong</h1>
+        <div class="player-names">
+            <input type="text" id="player1Name" placeholder="Nom du Joueur 1" class="name-input">
+            <input type="text" id="player2Name" placeholder="Nom du Joueur 2" class="name-input">
+        </div>
+        <div id="MenuBtn" class="menuButtons">
+            <button id="startBtn" class="button-style">Commencer</button>
+        </div>
+        <div id="classement" class="classement">
+            <h2>Classement</h2>
+            <ul id="playerScores" class="player-list"></ul>
+        </div>
+    </div>
+
+    <div id="gameContainer" class="gameContainer">
+        <div class="gameWrapper">
+            <canvas class="gameBoard" width="500" height="500"></canvas>
+            <div class="score-reset">
+                <div class="scoreText">0 - 0</div>
+                <button class="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message" class="message-style"></p>
+            <div class="modal-buttons">
+                <button id="replay-button" class="button-style">Rejouer</button>
+                <button id="menu-button" class="button-style">Retour au menu</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>
